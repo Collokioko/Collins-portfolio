@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collins's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/58b969ff94.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="icon" class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i id="icon" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fullstack Developer</p>
+                <h1>Hi, I'm <span>Collins</span><br>Muteti From Kenya</h1>
+                <div class="image">
+                    <img draggable="false" class="tilt" src="./images/background.jpg" alt="">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- ------------------about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- <div class="image"> -->
+                        <img draggable="false" class="tilt" src="./images/phone-background.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello! I'm Collins Muteti, a passionate fullstack developer. I am currently a student in Institute of software technologies studying software development.<br><br>
+                        I currently hold a certificate in Software Development and I interacted with the basic knowledge in both frontend and backend knowledge. My expertise include HTML, CSS, PHP and Javascript languages in web designing.<br><br>
+                        One of my proudest projects is the redesign of the Instute of Software Technologies website.<br><br>
+                        I’m always open to discussing new projects, collaborations, or design challenges. Feel free to connect with me via email at mutetic6@gmail.com or on one of my social media handles provided on the links below.
+
+
+                        
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web Interfaces</li>
+                            <li><span>Database management</span><br>maintaining and utilizing data in an organized, efficient, and secure manner.  </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>HTML/CSS</span><br>Designing web Interfaces</li>
+                            <li><span>PHP</span><br>Web </li>
+                            <li><span>UI/UX</span><br>App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2022</span><br>Secondary Education</li>
+                            <li><span>2023-2024</span><br>Certificate in Software Devolpment </li>
+                            <li><span>2024-</span><br>Diploma in Software Development</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- --------------services-------------     -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>As a beginner Software Developer, I have achieved a full understanding in creating and designing web pages.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>I focus on the look and feel of a digital product amd create a meaningful and relevant experience for users.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <!-- <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, repellendus quasi recusandae, minus rem nemo temporibus quisquam esse maxime sequi tenetur saepe velit sapiente nostrum nihil non voluptatibus consectetur accusamus!</p>
+                <a href="#">Learn more</a>
+            </div> -->
+        </div>
+    </div>
+ </div>
+ <!-- --------------portfolio------------- -->
+
+ <!-- <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure repudiandae quo incidunt sequi quaerat assumenda aspernatur adipisci architecto ipsa quibusdam quae quis ducimus recusandae dolores distinctio ipsum accusamus, quisquam ad?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure repudiandae quo incidunt sequi quaerat assumenda aspernatur adipisci architecto ipsa quibusdam quae quis ducimus recusandae dolores distinctio ipsum accusamus, quisquam ad?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure repudiandae quo incidunt sequi quaerat assumenda aspernatur adipisci architecto ipsa quibusdam quae quis ducimus recusandae dolores distinctio ipsum accusamus, quisquam ad?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+       <a href="#" class="btn">See more</a> 
+    </div>
+ </div> -->
+ <!-- ----------contact---------- -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> mutetic6@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0701423659</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/collok17/#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@collok21"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://x.com/ColloK16"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="images/my-cv.pdf"  download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email"
+                    placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Collins</p>
+    </div>
+  </div>
+<script src="/script.js"></script>
+</body>
+</html>
