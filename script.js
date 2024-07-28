@@ -36,4 +36,12 @@ function closemenu(){
       })
       .catch(error => console.error('Error!', error.message))
   })
+  document.addEventListener('DOMContentLoaded', function() {
+    const icon = document.getElementById('icon');
+    const navUl = document.querySelector('nav ul');
+
+    icon.addEventListener('click', function() {
+        navUl.classList.toggle('show');
+    });
+});
 
