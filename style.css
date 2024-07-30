@@ -69,7 +69,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column; /* Ensures text and image stack vertically */
     align-items: center; /* Center-aligns text and image */
@@ -81,7 +81,7 @@ nav ul li a:hover::after{
 }
 .header-text h1{
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .header-text h1 span{
     color: #ff004f;
